@@ -10,5 +10,4 @@ import "./style/index.scss";
 
 articles([posts[0], posts[1], posts[1], posts[0]]);
 subscribe()
-// articles([posts[0], posts[1], posts[1], posts[0]]);
 
