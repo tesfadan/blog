@@ -1,0 +1,13 @@
+.articles {
+    grid-auto-flow: column;
+    margin: unset;
+    gap: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: inherit;
+    max-width: inherit;
+    // flexbox
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 36px;
+}

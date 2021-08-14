@@ -1,42 +1,14 @@
 // @ts-ignore
+import article from "./components/article";
+import articles from "./components/articles";
+import subscribe from "./components/subscribe";
 import { posts } from "./content/posts";
-import { Post } from "./types/types";
 import "./style/index.scss";
 
-const article = (post: Post) => {
-    const header = document.createElement('div');
-    header.setAttribute('style', `
-        background: ${post.header.background};
-        color: ${post.header.color};
-        background-image: ${post.header.image};
-        `);
+// article(posts[0]);
+// articles(posts);
 
-    header.className = "header";
+articles([posts[0], posts[1], posts[1], posts[0]]);
+subscribe()
+// articles([posts[0], posts[1], posts[1], posts[0]]);
 
-    const title = document.createElement("h1");
-    title.innerHTML = post.title;
-
-    header.appendChild(title)
-    document.getElementById('article').appendChild(header);
-
-    document.title = post.title;
-
-    const content = document.createElement("div");
-    content.className = "content";
-
-    document.getElementById('article').appendChild(content);
-
-
-
-
-
-    post.content.map(block => {
-        const element = document.createElement(block.type);
-
-        element.innerHTML = block.content;
-
-        return content.appendChild(element)
-    })
-}
-
-article(posts[1]);

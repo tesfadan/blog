@@ -3,12 +3,18 @@ module.exports = {
     entry: './src/index.ts',
     devtool: 'inline-source-map',
     mode: 'development',
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+    },
     module: {
         rules: [
             {
                 test: /\.ts?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
+
             },
             // This works 
             // {

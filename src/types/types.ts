@@ -6,6 +6,7 @@ export interface Post {
     },
     title: string,
     content: Block[],
+    permalink: String
 }
 
 export interface Block {
