@@ -1,10 +1,10 @@
 // @ts-ignore
 import { posts } from "./content/posts";
 import { Post } from "./types/types";
+import "./style/index.scss";
 
 const article = (post: Post) => {
     const header = document.createElement('div');
-
     header.setAttribute('style', `
         background: ${post.header.background};
         color: ${post.header.color};
@@ -39,5 +39,4 @@ const article = (post: Post) => {
     })
 }
 
-// article(posts[0]);
 article(posts[1]);
