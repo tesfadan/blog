@@ -5,13 +5,16 @@
 }
 
 .article .header {
-    background: #59f9ff20;
+    // background: #59f9ff20;
     height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
     box-shadow: 0px 40px 40px #1f1f1f06;
+    background: unset !important;
+    border: 2px solid #181D3D;
+    color: #181D3D !important;
+    box-shadow: 8px 8px #FFB200;
 }
 
 .header h1 {
@@ -49,4 +52,5 @@ p {
     color: #181D3D;
     margin-top: 0rem;
     line-height: 2.1rem;
+    text-align: justify;
 }

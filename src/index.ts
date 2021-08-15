@@ -1,4 +1,5 @@
 // @ts-ignore
+import article from "./components/article";
 import articles from "./components/articles";
 import subscribe from "./components/subscribe";
 import { posts } from "./content/posts";
